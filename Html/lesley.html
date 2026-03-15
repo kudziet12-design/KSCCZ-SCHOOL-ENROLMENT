@@ -1,0 +1,41 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>School Enrollment System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src = "   c:\Users\ProBook\Downloads\images.jpg"linkstylesheet>
+    <div class="container">
+        <h2>Student Enrollment Form</h2>
+        <form id="enrollmentForm">
+            <label for="studentName">Student Full Name:</label>
+            <input type="text" id="studentName" required placeholder="Enter full name">
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" required>
+
+            <label for="grade">Grade Applying For:</label>
+            <select id="grade" required>
+               
+                <option value="1">form1</option>
+                <option value="2">form2</option>
+                 <option value="3">form3</option>
+                  <option value="4">form4</option>
+                   <option value="5">form5</option> 
+                   <option value="6">form6</option>
+                
+            </select>
+
+            <button type="submit">Submit Enrollment</button>
+            <p id="errorMessage" class="error"></p>
+            <p id="successMessage" class="success"></p>
+            <p>Note that no cellphones allowed in the school premisses</p>
+			
+            
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
