@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,36 +6,42 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img src = "   c:\Users\ProBook\Downloads\images.jpg"linkstylesheet>
     <div class="container">
+
+        <img src="images/school.jpg" alt="School Image" class="logo">
+
         <h2>Student Enrollment Form</h2>
+
         <form id="enrollmentForm">
+            
             <label for="studentName">Student Full Name:</label>
-            <input type="text" id="studentName" required placeholder="Enter full name">
+            <input type="text" id="studentName" placeholder="Enter full name">
 
             <label for="dob">Date of Birth:</label>
-            <input type="date" id="dob" required>
+            <input type="date" id="dob">
 
             <label for="grade">Grade Applying For:</label>
-            <select id="grade" required>
-               
-                <option value="1">form1</option>
-                <option value="2">form2</option>
-                 <option value="3">form3</option>
-                  <option value="4">form4</option>
-                   <option value="5">form5</option> 
-                   <option value="6">form6</option>
-                
+            <select id="grade">
+                <option value="">-- Select Grade --</option>
+                <option value="Form 1">Form 1</option>
+                <option value="Form 2">Form 2</option>
+                <option value="Form 3">Form 3</option>
+                <option value="Form 4">Form 4</option>
+                <option value="Form 5">Form 5</option>
+                <option value="Form 6">Form 6</option>
             </select>
 
             <button type="submit">Submit Enrollment</button>
+
             <p id="errorMessage" class="error"></p>
             <p id="successMessage" class="success"></p>
-            <p>Note that no cellphones allowed in the school premisses</p>
-			
-            
+
+            <p class="note">No cellphones allowed in the school premises</p>
+
         </form>
     </div>
+
     <script src="script.js"></script>
 </body>
-</html>
+</html>               
+                
